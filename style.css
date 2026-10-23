@@ -1,0 +1,24 @@
+body {
+    background-color: #f4f6f9;
+    color:#2c3e50;
+    font-family: arial, sans-serif;
+}
+/*2. ID Selector*/
+#main-header {
+padding: 20px;
+border-bottom: 3px solid #1a5276;
+}
+/* 3. class selector*/
+.card{
+
+padding: 15px;
+margin: 15px 0;
+border: 1px solid #dcdde1;
+background-color: #ffffff;
+}
+    /* 4. type selector for paragraph*/
+    p{
+        padding: 10px;
+        margin: 10px 0;
+        border-left: 4px solid #e74c3c;
+    }
