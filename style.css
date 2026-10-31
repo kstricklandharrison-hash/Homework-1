@@ -1,24 +1,58 @@
+/* 1. Google Font Import (Montserrat + Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&display=swap');
+
+/* Base styles */
 body {
     background-color: #f4f6f9;
-    color:#2c3e50;
-    font-family: arial, sans-serif;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-/*2. ID Selector*/
-#main-header {
-padding: 20px;
-border-bottom: 3px solid #1a5276;
-}
-/* 3. class selector*/
-.card{
 
-padding: 15px;
-margin: 15px 0;
-border: 1px solid #dcdde1;
-background-color: #ffffff;
+/* Heading Font */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
-    /* 4. type selector for paragraph*/
-    p{
-        padding: 10px;
-        margin: 10px 0;
-        border-left: 4px solid #e74c3c;
+
+/* 2. ID Selector */
+#main-header {
+    padding: 24px;
+    border-bottom: 3px solid #1a5276;
+    margin: 0;
+}
+
+/* 3. Class selector */
+.card {
+    padding: 16px;
+    margin: 16px 0;
+    border: 1px solid #dcdde1;
+    background-color: #ffffff;
+}
+
+/* 4. Type selector for paragraph */
+p {
+    padding: 8px 16px;
+    margin: 16px 0;
+    border-left: 4px solid #e74c3c;
+}
+
+/* 5. Layout (Multi-column Grid) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* 6. Responsiveness (2 @media queries) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
