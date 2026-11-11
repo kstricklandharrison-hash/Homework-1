@@ -10,7 +10,9 @@
 ## Color Contrast & Palette (WCAG AA)
 
 * **Color Palette:** Primary Text (`#2C3E50`) on White Background (`#FFFFFF`).
-* **WCAG AA Compliance:** Tested using the WebAIM Contrast Checker. The primary text color (`#2C3E50`) against the white background (`#FFFFFF`) achieves a contrast ratio of **10.98:1**, passing both WCAG AA and AAA standards (minimum requirement is 4.5:1). ## Visual Design & Gestalt Principles
+* **WCAG AA Compliance:** Tested using the WebAIM Contrast Checker. The primary text color (`#2C3E50`) against the white background (`#FFFFFF`) achieves a contrast ratio of **10.98:1**, passing both WCAG AA and AAA standards (minimum requirement is 4.5:1).
+
+## Visual Design & Gestalt Principles
 
 * **Gestalt Principle 1 (Proximity):** Used proximity on the Home and Projects pages by grouping related project titles, descriptions, and metadata inside bordered card containers with consistent padding and margin spacing.
 * **Gestalt Principle 2 (Similarity):** Used similarity across all three pages by applying consistent font families (`Montserrat` for headings, `Roboto` for body text), uniform button styles, and a cohesive color scheme to signal related interactive elements to the user.
