@@ -23,30 +23,40 @@
         <section class="card">
             <h2>Background</h2>
             <p>I am currently studying Environmental Science, Principles of Management, and Web Development.</p>
+            <button type="button" id="toggle-info-btn" aria-expanded="false" aria-controls="extra-info">
+                Show More Info
+            </button>
+            <p id="extra-info" hidden>
+                I am building interactive web pages and learning accessible JavaScript for my portfolio.
+            </p>
         </section>
 
         <section class="card">
             <h2>Get in Touch</h2>
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post" novalidate>
                 <fieldset>
                     <legend>Contact Form</legend>
                     
                     <div>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" aria-describedby="name-error" required>
+                        <p id="name-error" class="error-message" role="alert"></p>
                     </div>
                     
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" aria-describedby="email-error" required>
+                        <p id="email-error" class="error-message" role="alert"></p>
                     </div>
                     
                     <div>
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <textarea id="message" name="message" rows="4" aria-describedby="message-error" required></textarea>
+                        <p id="message-error" class="error-message" role="alert"></p>
                     </div>
                     
                     <button type="submit">Send</button>
+                    <p id="form-status" role="status"></p>
                 </fieldset>
             </form>
         </section>
@@ -56,5 +66,6 @@
         <p>&copy; 2026 Kashay. All rights reserved.</p>
     </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
